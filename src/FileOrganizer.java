@@ -15,7 +15,7 @@ public class FileOrganizer extends Application { // DirectorySelector is the cla
     public void start(Stage primaryStage) { // main window provided by javafx system
         primaryStage.setTitle("File Organizer");
 
-        DirectoryChooser directoryChooser = new DirectoryChooser(); // create a directory chooser dialog\
+        DirectoryChooser directoryChooser = new DirectoryChooser(); // create a directory chooser dialog
         String home = System.getProperty("user.home");
         directoryChooser.setInitialDirectory(new File(home)); // dialog will open pointing to src folder: home of user
 
