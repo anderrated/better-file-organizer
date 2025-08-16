@@ -1,0 +1,16 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+
+    {
+      "type": "java",
+      "name": "Run FileOrganizer",
+      "request": "launch",
+      "mainClass": "FileOrganizer",
+      "vmArgs": "--module-path \"C:/javafx/javafx-sdk-26/lib\" --add-modules javafx.controls,javafx.fxml", // passed to jvm
+      "classPaths": [
+        "${workspaceFolder}/bin" // where to find the compiled classes
+      ]
+    }
+  ]
+}

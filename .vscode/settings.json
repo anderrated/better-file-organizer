@@ -1,0 +1,7 @@
+{
+    "java.project.sourcePaths": ["src"], // point to source folder organizer
+    "java.project.outputPath": "bin", // all class files go to bin
+    "java.project.referencedLibraries": [ // javafx jars
+        "C:/javafx/javafx-sdk-26/lib/*.jar"
+    ]
+}
