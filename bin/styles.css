@@ -1,0 +1,21 @@
+.button {
+    -fx-background-color: #4CAF50;
+    -fx-text-fill: #fff;
+    -fx-font-size: 15px;
+    -fx-padding: 10px;
+}
+
+.button:hover {
+    -fx-background-color: #1d6720;
+}
+
+.text1, .text2 {
+    -fx-text-fill: #000000;
+    -fx-font-size: 15px;
+    -fx-alignment: center;
+}
+
+.vBox {
+    -fx-alignment: center;
+    -fx-padding: 20;
+}
