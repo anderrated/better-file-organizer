@@ -1,8 +1,8 @@
-jpg:C:\Users\ASUS\Images
-jpeg:C:\Users\ASUS\Images
-png:C:\Users\ASUS\Images
-gif:C:\Users\ASUS\Images
-bmp:C:\Users\ASUS\Images
+jpg:C:\Users\ASUS\Pictures
+jpeg:C:\Users\ASUS\Pictures
+png:C:\Users\ASUS\Pictures
+gif:C:\Users\ASUS\Pictures
+bmp:C:\Users\ASUS\Pictures
 pdf:C:\Users\ASUS\Documents
 doc:C:\Users\ASUS\Documents
 docx:C:\Users\ASUS\Documents
