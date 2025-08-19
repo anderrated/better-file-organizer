@@ -16,13 +16,13 @@ To use the File Organizer, follow these steps:
 2. Compile the Java files using the following command:
 
    ```
-   javac *.java
+   javac --module-path "C:/javafx/javafx-sdk-26/lib" --add-modules javafx.controls,javafx.fxml -d bin src\FileOrganizer.java src\ListFiles.java src\MappingReader.java
    ```
 
 3. Run the `FileOrganizer` class using the following command:
 
    ```
-   java FileOrganizer
+   java --module-path "C:/javafx/javafx-sdk-26/lib" --add-modules javafx.controls,javafx.fxml -cp bin FileOrganizer
    ```
 
 4. The application will open a window with a "Select Directory" button. Click the button to select the directory you want to organize.
@@ -55,8 +55,8 @@ The File Organizer is licensed under the [MIT License](LICENSE).
 To run the tests for the File Organizer, you can use the following command:
 
 ```
-javac *.java
-java -ea FileOrganizer
+javac --module-path "C:/javafx/javafx-sdk-26/lib" --add-modules javafx.controls,javafx.fxml -d bin src\FileOrganizer.java src\ListFiles.java src\MappingReader.java
+java --module-path "C:/javafx/javafx-sdk-26/lib" --add-modules javafx.controls,javafx.fxml -cp bin FileOrganizer
 ```
 
 This will run the application with assertions enabled, which will help catch any issues with the file organization logic.
