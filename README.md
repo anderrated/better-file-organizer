@@ -12,6 +12,10 @@ Once you have Java installed, you can download the source code for the File Orga
 
 To use the File Organizer, follow these steps:
 
+1. Double-click ```run.bat``` in explorer or run ```.\run.bat``` from Powershell.
+
+Another way to run it:
+
 1. Open a terminal or command prompt and navigate to the directory where you extracted the source code.
 2. Compile the Java files using the following command:
 
