@@ -22,7 +22,7 @@ public class ListFiles {
                 String filename = file.getName();
                 // find last occurrence of '.' in the filename
                 int dotIndex = filename.lastIndexOf('.');
-                String extension = (dotIndex > 0) ? filename.substring(dotIndex + 1) : "";
+                String extension = (dotIndex > 0) ? filename.substring(dotIndex + 1).toLowerCase() : "";
                 String selectedMapping = map.map.get(extension); // returns the folder name assoc with the extension
 
                 File targetFolder;
@@ -43,8 +43,15 @@ public class ListFiles {
                     }
                 }
 
+                Path source = file.toPath();
+                Path target = new File(targetFolder, filename).toPath();
+
                 try {
-                    Path temp = Files.move(file.toPath(), new File(targetFolder, filename).toPath(), StandardCopyOption.REPLACE_EXISTING);
+                    if (Files.exists(target)) {
+                         System.out.println("Skipping...(already exists): " + target.getFileName());
+                    } else {
+                    Files.move(source, target);
+                    }
                 } catch (IOException e) {
                     e.printStackTrace();
                     continue;
